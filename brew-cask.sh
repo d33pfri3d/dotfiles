@@ -10,10 +10,8 @@ brew tap caskroom/versions
 brew-cask install spectacle
 brew-cask install dropbox
 brew-cask install gyazo
-brew-cask install onepassword
 brew-cask install rescuetime
 brew-cask install spotify
-brew-cask install fatastical
 brew-cask install limechat
 
 
@@ -45,6 +43,5 @@ brew-cask install chromium
 brew-cask install torbrowser
 
 # less often
-brew-cask install screenflow4 # 4 specifically not 5.
 brew-cask install vlc
 brew-cask install transmission

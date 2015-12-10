@@ -55,6 +55,7 @@ plugins=(git)
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
+export ANDROID_HOME=/usr/local/opt/android-sdk
 
 source $ZSH/oh-my-zsh.sh
 
@@ -84,3 +85,9 @@ source ~/code/z/z.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+export NVM_DIR="/Users/shaun/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+
+code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}

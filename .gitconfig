@@ -81,3 +81,7 @@
 [user]
 	name = Shaun Dunne
 	email = thedarkpoet@gmail.com
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true

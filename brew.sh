@@ -59,7 +59,8 @@ brew install mtr
 brew install ack
 brew install git
 brew install imagemagick --with-webp
-brew install node # This installs `npm` too using the recommended installation method
+# brew install node # This installs `npm` too using the recommended installation method
+brew install nvm
 brew install pv
 brew install rename
 brew install tree
