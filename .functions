@@ -110,3 +110,6 @@ camerausedby() {
 shellswitch () {
 	chsh -s $(brew --prefix)/bin/$1
 }
+
+
+

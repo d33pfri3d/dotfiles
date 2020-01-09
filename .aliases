@@ -45,7 +45,6 @@ fi
 #alias lsd='ls -l | grep "^d"'
 
 
-
 # `cat` with beautiful colors. requires Pygments installed.
 # 							   sudo easy_install -U Pygments
 alias c='pygmentize -O style=monokai -f console256 -g'
@@ -87,6 +86,13 @@ alias fs="stat -f \"%z bytes\""
 # Empty the Trash on all mounted volumes and the main HDD
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; rm -rfv ~/.Trash"
 
+# PLAY Live Streams
+alias vlclive="/Applications/VLC.app/Contents/MacOS/VLC -I curses"
+alias lbc="vlclive http://media-ice.musicradio.com/LBCLondon.m3u"
+alias seb="vlclive http://www.sleepbot.com/ambience/cgi/listen.cgi/listen.pls"
+
+# Oculus Quest / Unity Log
+alias questLog="~/Library/Android/sdk/platform-tools/adb logcat -s Unity"
 
 # One of @janmoesen’s ProTip™s
 for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
