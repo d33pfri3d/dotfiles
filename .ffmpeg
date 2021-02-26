@@ -50,3 +50,7 @@ gifify() {
 webmify(){
 	ffmpeg -i $1 -vcodec libvpx -acodec libvorbis -isync -copyts -aq 80 -threads 3 -qmax 30 -y $2 $1.webm
 }
+
+yt-trim(){
+  ffmpeg -ss $1 -i $(youtube-dl -f 22 -g $2) -acodec copy -vcodec copy -t $3
+}

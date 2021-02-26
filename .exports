@@ -10,7 +10,36 @@ export LANG="en_US"
 
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
+
+export EDITOR="code --wait"
+
+export NVM_DIR="$HOME/.nvm"
+  . "/usr/local/opt/nvm/nvm.sh"
+export PATH="/usr/local/opt/icu4c/bin:$PATH"
+export PATH="/usr/local/opt/icu4c/sbin:$PATH"
+export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig/"
+export PATH="/.local/bin:$PATH"
+export PATH="$HOME/.fastlane/bin:$PATH"
+export PSQL_DIR=/usr/local/pgsql/bin/
+export PATH="$PSQL_DIR:$PATH"
+
+export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+
+
+export PATH="$PATH:$HOME/.rvm/bin"
+# if [ -f $(brew --prefix)/etc/bash_completion ]; then source $(brew --prefix)/etc/bash_completion; fi
+
+export GPG_TTY=$(tty)
+
+
+
 # here's LS_COLORS
 # github.com/trapd00r/LS_COLORS
-command -v gdircolors >/dev/null 2>&1 || alias gdircolors="dircolors"
-eval "$(gdircolors -b ~/.dircolors)"
+# command -v gdircolors >/dev/null 2>&1 || alias gdircolors="dircolors"
+# eval "$(gdircolors -b ~/.dircolors)"

@@ -1,8 +1,54 @@
+function UFC(){
+   youtube-dl https://ufcfightpass.com/video/$1 --netrc
+}
+
+# RecordIOS
+function ios_recordsim(){
+	xcrun simctl io booted recordVideo ~/Desktop/simulator.mov	
+}
+
+# Android Screenshot
+function android_screenshot(){
+	 adb shell screencap -p /sdcard/screenshot.png && adb pull /sdcard/screenshot.png &&  adb shell rm /sdcard/screenshot.png
+}
+
+function togif(){
+	ffmpeg -i "$1" -vf scale=320:-1 -r 6 -f gif -y ~/Desktop/"$2".gif
+}
+
+function brazzers(){
+	ffmpeg -i "$1" -map 0:3 -map 0:4 -codec copy "$2".mp4
+}
+
+
+# Skillshare Downloader
+function skillshare(){
+	ffmpeg -i $1 -c copy $2.mkv
+}
+
+function getmp4(){
+	ffmpeg -i $1 -c copy $2.mp4
+}
+
+
+function fg(){
+	echo "AUDIO: " "$1"
+	ffmpeg -i "$1" -i $2 -async 1 -c copy "$3".mp4
+}
+
 # Create a new directory and enter it
 function md() {
 	mkdir -p "$@" && cd "$@"
 }
 
+# FLAC to MP3
+function flacc(){
+  setopt localoptions rmstarsilent
+  for i in *.flac ; do 
+    ffmpeg -i "$i" -ab 320k -map_metadata 0 "$(basename "${i/.flac}")".mp3
+    rm -f "$i"
+  done
+}
 
 # find shorthand
 function f() {
@@ -59,6 +105,10 @@ function whois() {
 	/usr/bin/whois -h whois.internic.net $domain | sed '/NOTICE:/q'
 }
 
+function makebook() {
+  mkdir build chapters images
+  touch metadata.yml Makefile
+}
 
 
 # Extract archives - use: extract <file>
