@@ -94,6 +94,11 @@ alias seb="vlclive http://www.sleepbot.com/ambience/cgi/listen.cgi/listen.pls"
 # Oculus Quest / Unity Log
 alias questLog="~/Library/Android/sdk/platform-tools/adb logcat -s Unity"
 
+#################
+alias code="code-insiders"
+
+
+
 # One of @janmoesen’s ProTip™s
 for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
 	alias "$method"="lwp-request -m '$method'"

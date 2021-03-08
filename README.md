@@ -12,7 +12,7 @@ FFMpeg gets its own function file.
 - clone that repo
 - read and run parts of `setup-a-new-machine.sh`
 - read and run `symlink-setup.sh`
-  - git config needs attention, read the notes.
+- git config needs attention, read the notes.
 - use it. yay!
 
 #### maintenance

@@ -1,7 +1,5 @@
 # Because FFMpeg is the shit, it needs its own function file
 
-
-
 # Make a video squared ( 720/720 )
 function squareVideo(){
   ffmpeg -i $1 -vf "scale=720:720:force_original_aspect_ratio=decrease,pad=720:720:(ow-iw)/2:(oh-ih)/2:black" $1.mp4  
