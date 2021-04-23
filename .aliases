@@ -10,11 +10,14 @@ alias -- -="cd -"
 alias lock="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
 alias rm="rm -i"  # safety first
-alias cask='brew cask' # i <3 u cask
 alias where=which # sometimes i forget
 alias brwe=brew  #typos
-
 alias hosts='sudo $EDITOR /etc/hosts'   # yes I occasionally 127.0.0.1 twitter.com ;)
+
+# The MAC M1 Special
+alias a="arch -x86_64"
+alias ibrew="arch -x86_64 brew"
+
 
 # use coreutils `ls` if possible…
 hash gls >/dev/null 2>&1 || alias gls="ls"
@@ -95,7 +98,6 @@ alias seb="vlclive http://www.sleepbot.com/ambience/cgi/listen.cgi/listen.pls"
 alias questLog="~/Library/Android/sdk/platform-tools/adb logcat -s Unity"
 
 #################
-alias code="code-insiders"
 
 
 
