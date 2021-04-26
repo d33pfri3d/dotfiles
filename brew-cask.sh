@@ -1,47 +1,29 @@
-#!/bin/bash
-export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-
-# Install native apps
-
-brew install caskroom/cask/brew-cask
-brew tap caskroom/versions
-
-# daily
-brew-cask install spectacle
-brew-cask install dropbox
-brew-cask install gyazo
-brew-cask install rescuetime
-brew-cask install spotify
-brew-cask install limechat
-
-
 # dev
-brew-cask install iterm2
-brew-cask install sublime-text
-brew-cask install imagealpha
-brew-cask install imageoptim
+brew install --cask iterm2
+brew install --cask imagealpha
+brew install --cask imageoptim
+brew install --cask android-file-transfer
+brew install --cask android-platform-tools
+brew install --cask android-sdk
+brew install --cask android-studio
 
-brew-cask install slack
-brew-cask install virtualbox
-brew-cask install vagrant
-brew-cask install mysqlworkbench
-brew-cask install mongochef
-brew-cask install the-unarchiver
-
-# fun
+brew install --cask slack
+brew install --cask microsoft-teams
 
 # browsers
-brew-cask install google-chrome-canary
-
-brew-cask install firefox
-brew-cask install firefox-nightly
-brew-cask install firefoxdeveloperedition
-
-brew-cask install webkit-nightly
-brew-cask install chromium
-
-brew-cask install torbrowser
+brew install --cask brave-browser
+brew install --cask firefox
+brew install --cask torbrowser
+brew install --cask adoptopenjdk/openjdk/adoptopenjdk8
 
 # less often
-brew-cask install vlc
-brew-cask install transmission
+brew install --cask vlc
+brew install --cask cyberduck
+brew install --cask transmission
+
+# Things
+brew install --cask steam
+brew install --cask obs
+brew install --cask setapp
+brew install --cask prusaslicer
+brew install --cask ledger-live
