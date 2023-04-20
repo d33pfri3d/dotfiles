@@ -1,3 +1,20 @@
+# Function to download all episodes from iplayer with youtube-dl
+function iplayer(){
+	youtube-dl \
+	--netrc \
+	--ignore-errors \
+	--no-overwrites \
+	--no-check-certificate \
+	--no-part \
+	--no-mtime \
+	--no-continue \
+	--no-playlist \
+	--embed-thumbnail \
+	--add-metadata \
+	--batch-file "$1"
+}
+
+
 function m3u8(){
 	ffmpeg -i $1 -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 50 "$2".mp4
 }

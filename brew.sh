@@ -60,7 +60,6 @@ brew install ack
 brew install git
 brew install imagemagick --with-webp
 # brew install node # This installs `npm` too using the recommended installation method
-brew install nvm
 brew install pv
 brew install rename
 brew install tree
@@ -73,6 +72,8 @@ brew install android-platform-tools
 brew install pidcat   # colored logcat guy
 
 brew install zsh
+brew install pnpm
+brew install asdf
 
 # Remove outdated versions from the cellar
 brew cleanup

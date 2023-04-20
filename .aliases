@@ -12,7 +12,7 @@ alias lock="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resourc
 alias rm="rm -i"  # safety first
 alias where=which # sometimes i forget
 alias brwe=brew  #typos
-alias hosts='sudo $EDITOR /etc/hosts'   # yes I occasionally 127.0.0.1 twitter.com ;)
+alias hosts='sudo $EDITOR /etc/hosts'
 
 # The MAC M1 Special
 alias a="arch -x86_64"
