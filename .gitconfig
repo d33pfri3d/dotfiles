@@ -64,7 +64,7 @@
 # Any GitHub repo with my username should be checked out r/w by default
 # http://rentzsch.tumblr.com/post/564806957/public-but-hackable-git-submodules
 
-[url "git@github.com:d33pfri3d/"]
+[url "git@github.com:d33pfri3d"]
   insteadOf = "git://github.com/d33pfri3d/"
 [help]
 	autocorrect = 1
