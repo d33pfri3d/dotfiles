@@ -34,3 +34,4 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH="/Users/deepfried/.local/share/solana/install/active_release/bin:$PATH"
 
 export GPG_TTY=$(tty)
+
