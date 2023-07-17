@@ -1,20 +1,23 @@
 # dev
-brew install --cask iterm2
+#brew install --cask iterm2
+
 brew install --cask imagealpha
 brew install --cask imageoptim
-brew install --cask android-file-transfer
-brew install --cask android-platform-tools
-brew install --cask android-sdk
-brew install --cask android-studio
+#brew install --cask android-file-transfer
+#brew install --cask android-platform-tools
+#brew install --cask android-sdk
+#brew install --cask android-studio
 
 brew install --cask slack
 brew install --cask microsoft-teams
+brew install --cask visual-studio-code
+brew install --cask notion
 
 # browsers
 brew install --cask brave-browser
 brew install --cask firefox
 brew install --cask torbrowser
-brew install --cask adoptopenjdk/openjdk/adoptopenjdk8
+#brew install --cask adoptopenjdk/openjdk/adoptopenjdk8
 
 # less often
 brew install --cask vlc
