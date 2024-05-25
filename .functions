@@ -38,10 +38,6 @@ function togif(){
 	ffmpeg -i "$1" -vf scale=320:-1 -r 6 -f gif -y ~/Desktop/"$2".gif
 }
 
-function brazzers(){
-	ffmpeg -i "$1" -map 0:3 -map 0:4 -codec copy "$2".mp4
-}
-
 
 # Skillshare Downloader
 function skillshare(){
